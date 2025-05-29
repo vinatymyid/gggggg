@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="light" data-theme="light" data-venux-cid-adavfexl="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="icon" type="image/svg+xml" href="/images/logo.png">
+    <title>Venux - Home</title>
+    <link rel="canonical" href="https://spacelor.dev">
+    <meta name="description" content="Venux">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spacelor.dev">
+    <meta property="og:image:url" content="/images/logo.png">
+    <meta property="og:image:alt" content="logo">
+    <link rel="stylesheet" href="css/about.Cp4Umbnl.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="/css/fontawesome/fontawesome.css" rel="stylesheet" />
+    <link href="/css/fontawesome/brands.css" rel="stylesheet" />
+    <link href="/css/fontawesome/solid.css" rel="stylesheet" />
+    <style>
+        .preloader[data-venux-cid-adavfexl] {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: var(--preback, #fff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: opacity .5s ease;
+        }
+
+        .dot-container[data-venux-cid-adavfexl] {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dot[data-venux-cid-adavfexl] {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: var(--dot-color, black);
+            border-radius: 50%;
+            animation: dot-blink 1.4s infinite both;
+        }
+
+        .dot[data-venux-cid-adavfexl]:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .dot[data-venux-cid-adavfexl]:nth-child(2) {
+            animation-delay: .2s;
+        }
+
+        .dot[data-venux-cid-adavfexl]:nth-child(3) {
+            animation-delay: .4s;
+        }
+
+        @keyframes dot-blink {
+            0%, 80%, to {
+                opacity: 0;
+            }
+            40% {
+                opacity: 1;
+            }
+        }
+
+        [data-venux-cid-adavfexl][data-theme=dark] {
+            --preback: #000000;
+            --dot-color: #ffffff;
+        }
+    </style>
+    <script type="module">
+        window.addEventListener("load", function () {
+            document.getElementById("preloader").style.opacity = "0";
+            setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+            }, 500);
+        });
+    </script>
+<body data-venux-cid-adavfexl="">
+<div class="max-w-screen-xl mx-auto px-5">
+    <header class="navbar flex flex-col lg:flex-row justify-between items-center my-5">
+        <div class="flex w-full lg:w-auto items-center justify-between">
+            <a style='text-decoration: none; color:black'href="/" class="text-lg navbar-brand">
+                <span class="navbar-brand-primary">VenuxTemplate</span>
+            </a>
+            <div class="block lg:hidden">
+                <button id="venuxnav-menu" aria-label="Toggle Menu">
+                    <svg fill="currentColor" class="w-4 h-4 text-navbar-icon" width="24" height="24" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <title>Toggle Menu</title>
+                        <path class="venuxnav-close-icon venuxnav-toggle hidden" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828 4.828z"></path>
+                        <path class="venuxnav-open-iconvenuxnav-toggle" fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav class="venuxnav-items venuxnav-toggle hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+            <ul class="flex flex-col lg:flex-row lg:gap-3">
+                <li class="relative">
+                </li>
+           <li>
+                    <a style='text-decoration: none; color:black'href="/minecraft.html" class="flex lg:px-3 py-2 items-center navbar-link"> <span>Minecraft</span> </a>
+                </li>
+                <li>
+                    <a style='text-decoration: none; color:black'href="/fivem.html" class="flex lg:px-3 py-2 items-center navbar-link"> <span>FiveM</span> </a>
+</li>
+            </ul>
+
+        </nav>
+        <script>
+            (function () {
+                const closeOnClick = false;
+
+                ["DOMContentLoaded", "venux:after-swap"].forEach((event) => {
+                    document.addEventListener(event, addListeners);
+                });
+
+                function cloneAndReplace(element) {
+                    const clone = element.cloneNode(true);
+                    element.parentNode.replaceChild(clone, element);
+                }
+
+                function addListeners() {
+                    const oldMenuButton = document.getElementById("venuxnav-menu");
+                    if (oldMenuButton) {
+                        cloneAndReplace(oldMenuButton);
+                    }
+
+                    const oldDropdownMenus = document.querySelectorAll(".venuxnav-dropdown");
+                    oldDropdownMenus.forEach((menu) => {
+                        cloneAndReplace(menu);
+                    });
+
+                    const menuButton = document.getElementById("venuxnav-menu");
+                    menuButton && menuButton.addEventListener("click", toggleMobileNav);
+
+                    const dropdownMenus = document.querySelectorAll(".venuxnav-dropdown");
+                    dropdownMenus.forEach((menu) => {
+                        const button = menu.querySelector("button");
+                        button &&
+                        button.addEventListener("click", (event) =>
+                            toggleDropdownMenu(event, menu, dropdownMenus)
+                        );
+
+                        const dropDownSubmenus = menu.querySelectorAll(
+                            ".venuxnav-dropdown-submenu"
+                        );
+
+                        dropDownSubmenus.forEach((submenu) => {
+                            const submenuButton = submenu.querySelector("button");
+                            submenuButton &&
+                            submenuButton.addEventListener("click", (event) => {
+                                event.stopImmediatePropagation();
+                                toggleSubmenuDropdown(event, submenu);
+                            });
+                        });
+                    });
+
+                    document.addEventListener("click", (event) =>
+                        closeOnClick && closeNavOnClick(event)
+                    );
+                }
+
+                function toggleDropdownMenu(event, dropdownMenu, dropdownMenus) {
+                    const expanded = dropdownMenu.getAttribute("aria-expanded") === "true";
+                    dropdownMenus.forEach((menu) => {
+                        menu.setAttribute("aria-expanded", "false");
+                    });
+                    dropdownMenu.setAttribute("aria-expanded", String(!expanded));
+                    const dropdownContainer =
+                        dropdownMenu.querySelector(".dropdown-toggle");
+                    dropdownContainer.setAttribute(
+                        "aria-expanded",
+                        String(!expanded)
+                    );
+                }
+
+                function toggleMobileNav() {
+                    const items = document.querySelector(".venuxnav-items");
+                    const expanded = items.getAttribute("aria-expanded") === "true";
+                    items.classList.toggle("hidden");
+                    items.setAttribute("aria-expanded", String(!expanded));
+                }
+
+                function toggleSubmenuDropdown(event, submenu) {
+                    const expanded = submenu.getAttribute("aria-expanded") === "true";
+                    submenu.setAttribute("aria-expanded", String(!expanded));
+                    const subDropdownContainer =
+                        submenu.querySelector(".dropdown-toggle");
+                    subDropdownContainer.setAttribute(
+                        "aria-expanded",
+                        String(!expanded)
+                    );
+                }
+
+                function closeNavOnClick(event) {
+                    const items = document.querySelector(".venuxnav-items");
+                    const expanded = items.getAttribute("aria-expanded") === "true";
+                    if (!expanded) {
+                        return;
+                    }
+                    const menuButton = document.getElementById("venuxnav-menu");
+                    if (menuButton && menuButton.contains(event.target)) {
+                        return;
+                    }
+                    const dropdownMenus = document.querySelectorAll(
+                        ".venuxnav-dropdown"
+                    );
+                    let dropdown
+MenuClicked = false;
+                    dropdownMenus.forEach((menu) => {
+                        const button = menu.querySelector("button");
+                        if (button && button.contains(event.target)) {
+                            dropdownMenuClicked = true;
+                        }
+                    });
+                    if (!dropdownMenuClicked) {
+                        items.classList.toggle("hidden");
+                        items.setAttribute("aria-expanded", String(!expanded));
+                    }
+                }
+            })();
+        </script>
+    </header>
+</div>
+<div id="preloader" class="preloader" data-venux-cid-adavfexl="">
+    <div class="dot-container" data-venux-cid-adavfexl="">
+        <div class="dot" data-venux-cid-adavfexl=""></div>
+        <div class="dot" data-venux-cid-adavfexl=""></div>
+        <div class="dot" data-venux-cid-adavfexl=""></div>
+    </div>
+</div>
+</div> 
+</div> 
+</header>  
+</div>  
+</head>
+<div class="max-w-screen-xl mx-auto px-5">   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader</title>  
+    <div class="preloader" id="preloader" data-venux-cid-adavfexl="" style="opacity: 0; display: none;"> 
+        <div class="dot-container" data-venux-cid-adavfexl=""> 
+            <div class="dot" data-venux-cid-adavfexl=""></div> 
+            <div class="dot" data-venux-cid-adavfexl=""></div> 
+            <div class="dot" data-venux-cid-adavfexl=""></div> 
+        </div> 
+    </div>   
+    <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"> 
+        <div class="py-6 md:order-1 hidden md:block"> 
+            <picture> 
+                <source srcset="/images/logo.png 200w, /images/logo.png 400w, /images/logo.png 600w" type="image/webp" sizes="(max-width: 800px) 100vw, 620px"> 
+                <img src="/images/logo.png " srcset="/images/logo.png 200w, /images/logo.png 400w, /images/logo.png 600w" alt="Astronaut in the air" sizes="(max-width: 800px) 100vw, 620px" loading="eager" width="499" height="499" decoding="async"> 
+            </picture> 
+        </div> 
+        <div> 
+            <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+                Fast Hosting
+            </h1> 
+            <p class="text-lg mt-4 text-slate-600 max-w-xl">
+                Welcome to the website of Venux Template, the best Hosting Provider at this moment! 
+            </p> 
+            <div class="mt-6 flex flex-col sm:flex-row gap-3"> 
+                <a style='text-decoration: none; color:white'href="/minecraft.html" target="_blank" rel="noopener" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-black text-white hover:bg-gray-800 border-2 border-transparent flex gap-1 items-center justify-center"> 
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-white w-5 h-5" data-icon="bx:bxs-purchase-tag">  
+                        <symbol id="ai:bx:bxs-purchase-tag">
+                            <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8 8a2 2 0 0 0 2.828 0l7.172-7.172a2 2 0 0 0 0-2.828l-8-8zM7 9a2 2 0 1 1 .001-4.001A2 2 0 0 1 7 9z" fill="currentColor"></path>
+                        </symbol>
+                        <use xlink:href="#ai:bx:bxs-purchase-tag"></use>  
+                    </svg>
+                    Get your own server
+                </a> 
+                <a style='text-decoration: none; color:black'href="https://discord.gg/DISCORDLINKHERE" rel="noopener" target="_blank" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black flex gap-1 items-center justify-center"> 
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" class="text-black w-4 h-4" data-icon="bx:bxl-discord-alt">  
+                        <symbol id="ai:bx:bxl-discord-alt">
+                            <path d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1a14.66 14.66 0 0 0-4.58 0a10.14 10.14 0 0 0-.53-1.1a16 16 0 0 0-4.13 1.3a17.33 17.33 0 0 0-3 11.59a16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83a3.39 3.39 0 0 0 .42-.33a11.66 11.66 0 0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84a12.41 12.41 0 0 0 1.08 1.78a16.44 16.44 0 0 0 5.06-2.59a17.22 17.22 0 0 0-3-11.59a16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2a1.93 1.93 0 0 1 1.8-2a1.93 1.93 0 0 1 1.8 2a1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2a1.93 1.93 0 0 1 1.8-2a1.92 1.92 0 0 1 1.8 2a1.92 1.92 0 0 1-1.8 2z" fill="currentColor"></path>
+                        </symbol>
+                        <use xlink:href="#ai:bx:bxl-discord-alt"></use>  
+                    </svg>
+                    Discord Server
+                </a> 
+            </div> 
+        </div> 
+    </main>  
+</div>
+<div class="title text-center mb-5">
+    <h4>Reviews</h4>
+    <p>See what our customers think of us!</p>
+</div>
+<div class="reviews-wrapper">
+    <div class="reviews-container">
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+             </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <!-- Duplicate reviews for seamless looping -->
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_initials">JD</div>
+            <div class="details">John Doe &#183; ⭐⭐⭐⭐⭐</strong><br><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fermentum ex. Cras ut erat sit amet mauris facilisis condimentum egestas at ex. Ut libero ante, lacinia eu nunc a, molestie vehicula mi. Nam ut gravida sapien, lobortis semper justo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="features py-5">
+    <div class="container-fluid container-custom">
+        <div class="title text-center mb-5">
+            <h4>Our Features</h4>
+            <p>Here you can see some of our exclusive features!</p>
+        </div>
+        <div class="row">
+<!-- Feature 1: SSD Storage -->
+<div class="col-md-4 mb-4">
+<div class="features-box">
+    <!-- icon -->
+    <i class="fa-solid fa-bolt icon"></i><br>
+    <h2 class="mb-2">Speed</h2>
+    <p>Our servers are very fast with the latest specs, ensuring a great experience!</p>
+</div>
+</div>
+
+            <!-- Feature 2: Protection -->
+            <div class="col-md-4 mb-4">
+                <div class="features-box">
+                    <i class="fa-solid fa-shield-halved icon"></i><br>
+                    </svg>
+                    <h2 class="mb-2">Protection</h2>
+                    <p>All servers are protected from various attacks ensuring an great experience!</p>
+                </div>
+            </div>
+            <!-- Feature 3: Fast Creation -->
+            <div class="col-md-4 mb-4">
+                <div class="features-box">
+                    <i class="fa-solid fa-gauge-high icon"></i><br>
+                    </svg>
+                    <h2 class="mb-2">Fast Creation</h2>
+                    <p>Once payment is successful, your server will be automatically created so you can start right away.</p>
+                </div>
+            </div>
+            <!-- Feature 4: Great Uptime -->
+            <div class="col-md-4 mb-4">
+                <div class="features-box">
+                    <i class="fa-solid fa-clock icon"></i><br>
+                    </svg>
+                    <h2 class="mb-2">Great Uptime</h2>
+                    <p>With our special technoligies we ensure that your server is online and running 24/7!</p>
+                </div>
+            </div>
+            <!-- Feature 5: Great Uptime -->
+            <div class="col-md-4 mb-4">
+                <div class="features-box">
+                    <i class="fa-solid fa-server icon"></i><br>
+                    </svg>
+                    <h2 class="mb-2">Recources</h2>
+                    <p>What you buy is for you. We do not oversell and only allocate 90% from our servers to clients.</p>
+                </div>
+            </div>
+            <!-- Feature 6: Support -->
+            <div class="col-md-4 mb-4">
+                <div class="features-box">
+                    <i class="fa-solid fa-envelope icon"></i><br>
+                    </svg>
+                    <h2 class="mb-2">Support</h2>
+                    <p>We have an experienced support team that is ready to help you 12/7, in tickets, phone and mail!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="my-20"> 
+    <p class="text-center text-sm text-slate-500">
+        Copyright © 2024 Venux. All rights reserved. | <a style='text-decoration: none' href=/tos.html>ToS</a> | <a style='text-decoration: none' href=/privacy.html>Privacy Policy</a>
+    </p> 
+    <p class="text-center text-xs text-slate-500 mt-1">
+        <center>
+            <h6 class="credit">
+                Designed with <i class="fa fa-heart pulse"></i> by <a style='text-decoration: underline; color:black'href="https://ottesleegers.nl/">OS</a>
+            </h6>
+        </center>
+    </p> 
+</footer>  
+</body>
+</html>

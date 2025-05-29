@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="light" data-theme="light" data-venux-cid-adavfexl="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="icon" type="image/svg+xml" href="/images/logo.png">
+    <title>Venux - Home</title>
+    <link rel="canonical" href="https://spacelor.dev">
+    <meta name="description" content="Venux">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spacelor.dev">
+    <meta property="og:image:url" content="/images/logo.png">
+    <meta property="og:image:alt" content="logo">
+    <link rel="stylesheet" href="css/about.Cp4Umbnl.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="/css/fontawesome/fontawesome.css" rel="stylesheet" />
+    <link href="/css/fontawesome/brands.css" rel="stylesheet" />
+    <link href="/css/fontawesome/solid.css" rel="stylesheet" />
+    <style>
+        .preloader[data-venux-cid-adavfexl] {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: var(--preback, #fff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: opacity .5s ease;
+        }
+
+        .dot-container[data-venux-cid-adavfexl] {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dot[data-venux-cid-adavfexl] {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: var(--dot-color, black);
+            border-radius: 50%;
+            animation: dot-blink 1.4s infinite both;
+        }
+
+        .dot[data-venux-cid-adavfexl]:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .dot[data-venux-cid-adavfexl]:nth-child(2) {
+            animation-delay: .2s;
+        }
+
+        .dot[data-venux-cid-adavfexl]:nth-child(3) {
+            animation-delay: .4s;
+        }
+
+        @keyframes dot-blink {
+            0%, 80%, to {
+                opacity: 0;
+            }
+            40% {
+                opacity: 1;
+            }
+        }
+
+        [data-venux-cid-adavfexl][data-theme=dark] {
+            --preback: #000000;
+            --dot-color: #ffffff;
+        }
+    </style>
+    <script type="module">
+        window.addEventListener("load", function () {
+            document.getElementById("preloader").style.opacity = "0";
+            setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+            }, 500);
+        });
+    </script>
+</head> 
+</header> 
+<body data-venux-cid-adavfexl="">
+<div class="max-w-screen-xl mx-auto px-5">
+    <header class="navbar flex flex-col lg:flex-row justify-between items-center my-5">
+        <div class="flex w-full lg:w-auto items-center justify-between">
+            <a style='text-decoration: none; color:black'href="/" class="text-lg navbar-brand">
+                <span class="navbar-brand-primary">VenuxTemplate</span>
+            </a>
+            <div class="block lg:hidden">
+                <button id="venuxnav-menu" aria-label="Toggle Menu">
+                    <svg fill="currentColor" class="w-4 h-4 text-navbar-icon" width="24" height="24" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <title>Toggle Menu</title>
+                        <path class="venuxnav-close-icon venuxnav-toggle hidden" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828 4.828z"></path>
+                        <path class="venuxnav-open-iconvenuxnav-toggle" fill-rule="evenodd"
+                              d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav class="venuxnav-items venuxnav-toggle hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+            <ul class="flex flex-col lg:flex-row lg:gap-3">
+                <li class="relative">
+                </li>
+           <li>
+                    <a style='text-decoration: none; color:black'href="/minecraft.html" class="flex lg:px-3 py-2 items-center navbar-link"> <span>Minecraft</span> </a>
+                </li>
+                <li>
+                    <a style='text-decoration: none; color:black'href="/fivem.html" class="flex lg:px-3 py-2 items-center navbar-link"> <span>FiveM</span> </a>
+</li>
+            </ul>
+
+        </nav>
+        <script>
+            (function () {
+                const closeOnClick = false;
+
+                ["DOMContentLoaded", "venux:after-swap"].forEach((event) => {
+                    document.addEventListener(event, addListeners);
+                });
+
+                function cloneAndReplace(element) {
+                    const clone = element.cloneNode(true);
+                    element.parentNode.replaceChild(clone, element);
+                }
+
+                function addListeners() {
+                    const oldMenuButton = document.getElementById("venuxnav-menu");
+                    if (oldMenuButton) {
+                        cloneAndReplace(oldMenuButton);
+                    }
+
+                    const oldDropdownMenus = document.querySelectorAll(".venuxnav-dropdown");
+                    oldDropdownMenus.forEach((menu) => {
+                        cloneAndReplace(menu);
+                    });
+
+                    const menuButton = document.getElementById("venuxnav-menu");
+                    menuButton && menuButton.addEventListener("click", toggleMobileNav);
+
+                    const dropdownMenus = document.querySelectorAll(".venuxnav-dropdown");
+                    dropdownMenus.forEach((menu) => {
+                        const button = menu.querySelector("button");
+                        button &&
+                        button.addEventListener("click", (event) =>
+                            toggleDropdownMenu(event, menu, dropdownMenus)
+                        );
+
+                        const dropDownSubmenus = menu.querySelectorAll(
+                            ".venuxnav-dropdown-submenu"
+                        );
+
+                        dropDownSubmenus.forEach((submenu) => {
+                            const submenuButton = submenu.querySelector("button");
+                            submenuButton &&
+                            submenuButton.addEventListener("click", (event) => {
+                                event.stopImmediatePropagation();
+                                toggleSubmenuDropdown(event, submenu);
+                            });
+                        });
+                    });
+
+                    document.addEventListener("click", (event) =>
+                        closeOnClick && closeNavOnClick(event)
+                    );
+                }
+
+                function toggleDropdownMenu(event, dropdownMenu, dropdownMenus) {
+                    const expanded = dropdownMenu.getAttribute("aria-expanded") === "true";
+                    dropdownMenus.forEach((menu) => {
+                        menu.setAttribute("aria-expanded", "false");
+                    });
+                    dropdownMenu.setAttribute("aria-expanded", String(!expanded));
+                    const dropdownContainer =
+                        dropdownMenu.querySelector(".dropdown-toggle");
+                    dropdownContainer.setAttribute(
+                        "aria-expanded",
+                        String(!expanded)
+                    );
+                }
+
+                function toggleMobileNav() {
+                    const items = document.querySelector(".venuxnav-items");
+                    const expanded = items.getAttribute("aria-expanded") === "true";
+                    items.classList.toggle("hidden");
+                    items.setAttribute("aria-expanded", String(!expanded));
+                }
+
+                function toggleSubmenuDropdown(event, submenu) {
+                    const expanded = submenu.getAttribute("aria-expanded") === "true";
+                    submenu.setAttribute("aria-expanded", String(!expanded));
+                    const subDropdownContainer =
+                        submenu.querySelector(".dropdown-toggle");
+                    subDropdownContainer.setAttribute(
+                        "aria-expanded",
+                        String(!expanded)
+                    );
+                }
+
+                function closeNavOnClick(event) {
+                    const items = document.querySelector(".venuxnav-items");
+                    const expanded = items.getAttribute("aria-expanded") === "true";
+                    if (!expanded) {
+                        return;
+                    }
+                    const menuButton = document.getElementById("venuxnav-menu");
+                    if (menuButton && menuButton.contains(event.target)) {
+                        return;
+                    }
+                    const dropdownMenus = document.querySelectorAll(
+                        ".venuxnav-dropdown"
+                    );
+                    let dropdown
+MenuClicked = false;
+                    dropdownMenus.forEach((menu) => {
+                        const button = menu.querySelector("button");
+                        if (button && button.contains(event.target)) {
+                            dropdownMenuClicked = true;
+                        }
+                    });
+                    if (!dropdownMenuClicked) {
+                        items.classList.toggle("hidden");
+                        items.setAttribute("aria-expanded", String(!expanded));
+                    }
+                }
+            })();
+        </script>
+    </header>
+</div>
+<div id="preloader" class="preloader" data-venux-cid-adavfexl="">
+    <div class="dot-container" data-venux-cid-adavfexl="">
+        <div class="dot" data-venux-cid-adavfexl=""></div>
+        <div class="dot" data-venux-cid-adavfexl=""></div>
+        <div class="dot" data-venux-cid-adavfexl=""></div>
+    </div>
+</div>
+</div> 
+</div> 
+</header>  
+</div>  
+</div>  
+<div class="max-w-screen-xl mx-auto px-5">   
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preloader</title>  <div class="preloader" id="preloader" data-astro-cid-adavfexl="" style="opacity: 0; display: none;"> <div class="dot-container" data-astro-cid-adavfexl=""> <div class="dot" data-astro-cid-adavfexl=""></div> <div class="dot" data-astro-cid-adavfexl=""></div> <div class="dot" data-astro-cid-adavfexl=""></div> </div> </div>    <div class="mt-16 text-center"> <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight"> Minecraft Hosting </h1> <p class="text-lg mt-4 text-slate-600"> 
+    Host your server on our powerfull servers for a low cost!</p></div>
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      <div>
+          <div class="card flex flex-col w-full order-first lg:order-none border-2 py-5 px-6 rounded-md">
+              <div class="text-center">
+                  <h4 class="text-lg font-medium text-gray-400">Minecraft 1</h4>
+                  <p class="mt-3 text-4xl font-bold md:text-4xl">$2 / month</p>
+              </div>
+              <ul class="grid mt-8 text-left gap-y-4">
+                <li class="flex items-start gap-3">
+                    <span><i class="fa-solid fa-memory"></i> 2GB RAM</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span><i class="fa-solid fa-floppy-disk"></i> 10GB Storage</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span><i class="fa-solid fa-microchip"></i> AMD Ryzen 9 5950X</span>
+              </li>
+            </ul>
+            <a style='text-decoration: none; color:black'href="/buy" rel="noopener" target="_blank" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black flex gap-1 items-center justify-center"> 
+                <i class="fa-solid fa-tag"></i> Buy
+            </a> 
+          </div>
+      </div>
+      <div>
+          <div class="card flex flex-col w-full order-first lg:order-none border-2 py-5 px-6 rounded-md">
+              <div class="text-center">
+                  <h4 class="text-lg font-medium text-gray-400">Minecraft 2</h4>
+                  <p class="mt-3 text-4xl font-bold md:text-4xl">$4 / month</p>
+              </div>
+              <ul class="grid mt-8 text-left gap-y-4">
+                <li class="flex items-start gap-3">
+                    <span><i class="fa-solid fa-memory"></i> 4GB RAM</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span><i class="fa-solid fa-floppy-disk"></i> 10GB Storage</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span><i class="fa-solid fa-microchip"></i> AMD Ryzen 9 5950X</span>
+              </li>
+            </ul>
+            <a style='text-decoration: none; color:black'href="/buy" rel="noopener" target="_blank" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black flex gap-1 items-center justify-center"> 
+                <i class="fa-solid fa-tag"></i> Buy
+            </a> 
+          </div>
+
+      </div>
+      <div>
+          <div class="card flex flex-col w-full order-first lg:order-none border-2 py-5 px-6 rounded-md">
+              <div class="text-center">
+                  <h4 class="text-lg font-medium text-gray-400">Minecraft 3</h4>
+                  <p class="mt-3 text-4xl font-bold md:text-4xl">$6 / month</p>
+              </div>
+              <ul class="grid mt-8 text-left gap-y-4">
+                  <li class="flex items-start gap-3">
+                      <span><i class="fa-solid fa-memory"></i> 6GB RAM</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                      <span><i class="fa-solid fa-floppy-disk"></i> 10GB Storage</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span><i class="fa-solid fa-microchip"></i> AMD Ryzen 9 5950X</span>
+                </li>
+              </ul>
+              <a style='text-decoration: none; color:black'href="/buy" rel="noopener" target="_blank" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black flex gap-1 items-center justify-center"> 
+                <i class="fa-solid fa-tag"></i> Buy
+            </a> 
+          </div>
+      </div>
+  </div> 
+  <footer class="my-20"> 
+    <p class="text-center text-sm text-slate-500">
+        Copyright © 2024 Venux. All rights reserved. | <a style='text-decoration: none' href=/tos.html>ToS</a> | <a style='text-decoration: none' href=/privacy.html>Privacy Policy</a>
+    </p> 
+    <p class="text-center text-xs text-slate-500 mt-1">
+        <center>
+            <h6 class="credit">
+                Designed with <i class="fa fa-heart pulse"></i> by <a style='text-decoration: underline; color:black'href="https://ottesleegers.nl/">OS</a>
+            </h6>
+        </center>
+    </p> 
+</footer>  
+  </body>
+  </html>

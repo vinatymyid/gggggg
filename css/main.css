@@ -1,0 +1,155 @@
+.features-box {
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out 0s;
+    position: relative; /* Zorgt ervoor dat de icon relatief gepositioneerd is binnen deze container */
+    -webkit-box-shadow: 0px 0px 15px 0px #cccee3;
+    -moz-box-shadow: 0px 0px 15px 0px #cccee3;
+    box-shadow: 0px 0px 15px 0px #cccee3;
+}
+
+.features-box:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    position: absolute;
+    top: 10px; /* Pas aan om de afstand vanaf de bovenkant te bepalen */
+    right: 10px; /* Pas aan om de afstand vanaf de rechterkant te bepalen */
+    font-size: 48px; /* Begin grootte */
+    transition: font-size 0.2s; /* Soepele overgang bij grootte verandering */
+}
+
+/* Responsief gedrag */
+@media (max-width: 1200px) {
+    .icon {
+        font-size: 42px; /* Aanpassen voor kleinere schermen */
+    }
+}
+
+@media (max-width: 992px) {
+    .icon {
+        font-size: 36px; /* Nog kleiner voor medium schermen */
+    }
+}
+
+@media (max-width: 768px) {
+    .icon {
+        font-size: 30px; /* Kleinste grootte voor kleine schermen */
+    }
+}
+
+.credit {
+    padding: 1rem 0 0 0;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    border-top: 0.1rem solid #fff3;
+  }
+.table-container {
+
+    border-radius: 15px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+th {
+    background-color: #1c1f37;
+    color: #fff;
+}
+td {
+    background-color: #252a43;
+}
+.checkmark {
+    color: #4CAF50;
+}
+.crossmark {
+    color: #F44336;
+}
+.header-icon {
+    width: 30px;
+}
+.reviews-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.reviews-container {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.review {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 10px;
+    min-width: 300px;
+    max-width: 300px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, max-width 0.3s ease;
+}
+
+
+
+.review_initials {
+    font-weight: bold;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.details {
+    flex: 1;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.reviews-container:hover {
+    animation-play-state: paused;
+}
+.review:hover {
+    transform: scale(1.1);
+}
+.review_initials {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+.review {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 0px #cccee3;
+    -moz-box-shadow: 0px 0px 5px 0px #cccee3;
+    box-shadow: 0px 0px 5px 0px #cccee3;
+}
